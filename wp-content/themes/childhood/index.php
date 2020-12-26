@@ -6,7 +6,7 @@
         <div class="mainslider glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_1.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url');?>/assets/img/bg_1.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -26,7 +26,7 @@
                             </button>
                         </div>
                     </li>
-                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_2.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url');?>/assets/img/bg_2.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </li>
-                    <li style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/bg_3.jpg')" class="glide__slide">
+                    <li style="background-image: url('<?php echo bloginfo('template_url');?>/assets/img/bg_3.jpg')" class="glide__slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 offset-1">
@@ -77,18 +77,18 @@
                         <div class="about__img">
                             <?php
                                 $image = get_field('about_img');
-                                if (!empty($image)): ?>
+                                if (!empty($image)):?>
                                     <img 
-                                    src="<?php echo $image['url']; ?>" 
-                                    alt="<?php echo $image['alt']; ?>">
+                                    src="<?php echo $image['url'];?>" 
+                                    alt="<?php echo $image['alt'];?>">
                                 <?php endif;
                             ?>
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1 class="title underlined"><?php the_field('about_title'); ?></h1>
+                        <h1 class="title underlined"><?php the_field('about_title');?></h1>
                         <div class="about__text">
-                          <?php the_field('about_descr'); ?>
+                          <?php the_field('about_descr');?>
                         </div>
                         <a href="#" class="button">Узнать больше</a>
                     </div>
@@ -97,15 +97,16 @@
         </div>
         <div class="specialists" id="specialists">
             <div class="container">
-                <div class="title"><?php the_field('team_title'); ?></div>
+                <div class="title"><?php the_field('team_title');?></div>
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <?php
                             $image = get_field('team_img');
-                            if (!empty($image)): ?>
+                            if (!empty($image)):?>
                                 <img 
-                                src="<?php echo $image['url']; ?>" 
-                                alt="<?php echo $image['alt']; ?>">
+                                src="<?php echo $image['url'];?>" 
+                                alt="<?php echo $image['alt'];?>"
+                                class="specialists__img">
                             <?php endif;
                         ?>
                     </div>
@@ -115,19 +116,19 @@
 
         <div class="toys" id="toys">
             <div class="container">
-                <h2 class="subtitle"><?php the_field('toy_title'); ?></h2>
+                <h2 class="subtitle"><?php the_field('toy_title');?></h2>
                 <div class="toys__wrapper">
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_1.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_1.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Плюшевые медведи</div>
                             <div class="toys__item-descr">
-                                Классика. Должен быть у каждого ребенка!                            
+                                Классика. Должен быть у каждого ребенка!
                             </div>
                             <div class="minibutton toys__trigger">Подробнее</div>
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_2.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_2.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Совенок</div>
                             <div class="toys__item-descr">
@@ -137,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_3.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_3.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Кролики</div>
                             <div class="toys__item-descr">
@@ -146,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_4.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_4.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Гибкие</div>
                             <div class="toys__item-descr">
@@ -155,7 +156,7 @@
                             <div class="minibutton toys__trigger">Подробнее</div>
                         </div>
                     </div>
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_5.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_5.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Персонажи</div>
                             <div class="toys__item-descr">
@@ -164,7 +165,7 @@
                             <div class="minibutton toys__trigger">Подробнее</div>
                         </div>
                     </div>
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_6.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_6.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Необычные</div>
                             <div class="toys__item-descr">
@@ -176,10 +177,10 @@
                 </div>
 
 
-                <h2 class="subtitle"><?php the_field('development_title'); ?></h2>
+                <h2 class="subtitle"><?php the_field('development_title');?></h2>
                 <div class="toys__wrapper">
 
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_7.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_7.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Воздушный змей</div>
                             <div class="toys__item-descr">
@@ -189,7 +190,7 @@
                         </div>
                     </div>
 
-                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url'); ?>/assets/img/toy_8.jpg)">
+                    <div class="toys__item" style="background-image: url(<?php echo bloginfo('template_url');?>/assets/img/toy_8.jpg)">
                         <div class="toys__item-info">
                             <div class="toys__item-title">Музыкальные</div>
                             <div class="toys__item-descr">
@@ -203,7 +204,7 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="toys__alert">
-                            <span>Не нашли то, что искали?</span> Свяжитесь с нами - и мы с радостью создадим любую игрушку по вашему желанию. Вы можете выбрать все: размер, материал, формы...!
+                            <span><?php the_field('development_descr-bold');?></span><?php the_field('development_descr');?>
                         </div>
                     </div>
                 </div>
@@ -212,31 +213,31 @@
 
         <div class="aboutus" id="aboutus">
             <div class="container">
-                <h1 class="title"><?php the_field('history_title'); ?></h1>
+                <h1 class="title"><?php the_field('history_title');?></h1>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subtitle">
-                        <?php the_field('history_subtitle1'); ?>
+                        <?php the_field('history_subtitle1');?>
                         </div>
                         <div class="aboutus__text">
-                            <?php the_field('history_descr1'); ?>
+                            <?php the_field('history_descr1');?>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_1.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url');?>/assets/img/about_1.jpg" alt="мир детства">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_2.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url');?>/assets/img/about_2.jpg" alt="мир детства">
                     </div>
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            <?php the_field('history_subtitle2'); ?>
+                            <?php the_field('history_subtitle2');?>
                         </div>
                         <div class="aboutus__text">
-                            <?php the_field('history_descr2'); ?>
+                            <?php the_field('history_descr2');?>
                         </div>
                     </div>
                 </div>
@@ -244,28 +245,26 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subtitle">
-                            <?php the_field('history_subtitle3'); ?>
+                            <?php the_field('history_subtitle3');?>
                         </div>
                         <div class="aboutus__text">
-                            <?php the_field('history_descr3'); ?>
+                            <?php the_field('history_descr3');?>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="aboutus__img" src="<?php echo bloginfo('template_url'); ?>/assets/img/about_3.jpg" alt="мир детства">
+                        <img class="aboutus__img" src="<?php echo bloginfo('template_url');?>/assets/img/about_3.jpg" alt="мир детства">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="contacts" id="contacts">
-            <h1 class="title">Где нас найти</h1>
+            <h1 class="title"><?php the_field('find-us__title');?></h1>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="contacts__descr underlined">
-                            Мы находимся в Москве, метро "Парк победы", в деловом центре "Парк победы", второй этаж
-                            <br> <br>
-                            по адресу ул. Василисы Кожиной, 1
+                            <?php the_field('find-us__descr');?>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -325,7 +324,7 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:<?php the_field('phone_1', 2); ?>"><?php the_field('phone_1', 2); ?></a>
+                                        <a href="tel:<?php the_field('phone_1', 2);?>"><?php the_field('phone_1', 2);?></a>
                                     </div>
                                 </div>
                                 <div class="contacts__phoneblock">
@@ -375,13 +374,13 @@
                                             </linearGradient>
                                             </defs>
                                         </svg>
-                                        <a href="tel:<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
+                                        <a href="tel:<?php the_field('phone_2', 2);?>"><?php the_field('phone_2', 2);?></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="contacts__mail">
                                 Или напишите нам на почту
-                                <a href="<?php the_field('mail', 2); ?>" class="header__contacts-mail"><?php the_field('mail', 2); ?></a>
+                                <a href="<?php the_field('mail', 2);?>" class="header__contacts-mail"><?php the_field('mail', 2);?></a>
                             </div>
                         </div>
                     </div>
