@@ -254,7 +254,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div id="map" class="contacts__map">
+                        <div class="contacts__map">
+                            <?php echo do_shortcode( '[wpgmza id="1"]'); ?>
                         </div>
                     </div>
                 </div>
