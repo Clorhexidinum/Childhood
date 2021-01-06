@@ -21,16 +21,20 @@ function my_acf_google_map_api($api)
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 3);
+add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 3);
 function filter_nav_menu_link_attributes($atts, $item, $args) {
-  if ($args->menu === 'main') {
-    $atts['class'] = 'header__nav-item';
+    if ($args->menu === 'main') {
+        $atts['class'] = 'header__nav-item';
 
-    if ($item->current) {
-      $atts['class'] .= ' header__nav-item-active';
-    }
-  };
+        if ($item->current) {
+            $atts['class'] .= ' header__nav-item-active';
+        }
+        if( $item->ID === 150 && ( in_category( 'soft_toys' ) || in_category( 'educational_toys' ))){
+            $atts['class'] .= ' header__nav-item-active';
+        }
+    };
 
-  return $atts;
+    return $atts;
 }
 
 /* Вариант подключения разными скриптами
