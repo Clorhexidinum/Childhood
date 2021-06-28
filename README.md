@@ -1,2 +1,2 @@
 # Childhood
- Посадка страницы еа Webpack
+ Посадка страницы на Wordpress
